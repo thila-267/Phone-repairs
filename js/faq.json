@@ -1,0 +1,51 @@
+[
+	{
+		"Question": "Why do I have to pay a service fee?",
+		"Answer" : "A service fee is only charged for repairs to devices that are no longer under warran-ty. Business customers are not charged a service fee in accord with the terms of their contract."
+ 	},
+
+ 	{
+ 		"Question": "What is the bond for?",
+ 		"Answer" : "The bond is to cover any damage done to the courtesy phone and/or charger. The bond will be refunded upon the safe and undamaged return of the phone and charger."
+ 	},
+
+ 	{
+ 		"Question": "Do I need a charger with my courtesy phone?",
+ 		"Answer" : "No, a charger is optional. You can add one with the 'Add charger' button. If you don't want one but added one by accident, you can remove it by clicking on the 'Remove charger' button."
+ 	},
+
+ 	{
+ 		"Question": " Why isn't my phone under warranty?",
+ 		"Answer" : " The length of your phone's warranty depends on the warranty package you chose upon purchase. The standard is 24 months and is calculated from its purchase date."
+ 	},
+ 	
+ 	{
+ 		"Question": " How long will my repair take?",
+ 		"Answer" : " Depends on your phone broken status. It takes normally 5 to 7 working days."
+ 	},
+ 	
+ 	{
+ 		"Question": " How do you protect the private information in my phone?",
+ 		"Answer" : " We comply with all relevant laws regarding privacy and client confidentiality."
+ 	},
+ 
+ 	{
+ 		"Question": " Where do you get your replacement parts?",
+ 		"Answer" : " We will send you a quote of all possible vendors who supply replacement parts for your references and your choice."
+ 	},
+ 	
+ 	{
+ 		"Question": " What happens if my phone is further damage after leaving it with you?",
+ 		"Answer" : " We make sure that it never happens."
+ 	},
+ 	
+ 	{
+ 		"Question": " What kind of warranty do you offer and what does it cover?",
+ 		"Answer" : "1 month is the average warranty period. These warranties covers parts and service only."
+ 	},
+ 	
+ 	{
+ 		"Question": " What does the repair estimate include?",
+ 		"Answer" : " The repair price estimate includes both replacement parts and labor."
+ 	}
+]

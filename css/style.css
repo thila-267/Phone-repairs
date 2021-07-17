@@ -1,0 +1,285 @@
+/* All the styles below are set for mobile device( Responsive Website)*/
+/*Global styles*/
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Use css variables (custom properties)*/
+:root {
+	--main-color: #FAF0F0;
+	--header-color: #01133A ;
+	--nav-color: #117679;
+	--custDet-color: #F5BEBF;
+	--reapDet-color: #FAF0F0;
+	--courtPhone-color: #117679;
+	--cost-color: #F06381;
+	--button-color: #F06381;
+	--footer-color: #01133A;
+}
+
+body {
+	font-size: 1em;
+}
+
+/*-----Style for Header area--------*/
+header{
+	background-color: var(--header-color);
+	min-height: 20vh;
+	display: block;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+header nav ul li{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	background-color: var(--nav-color);
+	padding: 0.5em;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+}
+
+header .title_area{
+	padding: 1.5em 0.5em;
+}
+
+header h1{
+	padding: 1em;
+}
+
+/*-----Style for Main area----------*/
+main {
+	background-color: var(--main-color);
+}
+
+.customer_details{
+	background-color: var(--custDet-color);
+	min-height: 30vh;
+	padding: 3em;
+}
+
+.repair_details{
+	background-color: var(--reapDet-color);
+	min-height: 80vh;
+	padding: 3em;
+}
+
+.courtesy_phone{
+	background-color: var(--courtPhone-color);
+	min-height: 15vh;
+	padding: 3em;
+}
+
+.courtesy_phone table{
+	border-collapse: collapse;
+	background-color: white;
+	width: 100%;
+	margin-top:0;
+}
+.courtesy_phone th{
+	background-color: #EFEDEE ;
+}
+
+.courtesy_phone table,td,th{
+	border: 1px solid black;
+	padding: 1em;
+	text-align: center;
+}
+
+.cost{
+	background-color: var(--cost-color);
+	min-height: 20vh; 
+	padding: 3em;
+}
+
+.buttons {
+	background-color: var(--button-color);
+	min-height: 10vh;
+	padding: 3em;
+	text-align: center;
+}
+
+.form_layout input[type=text], input[type=Number], input[type=Date], input[type=button], input[type=submit], input[type=reset], select{
+	width: 100%;
+	margin-top:1em;
+}
+
+/*-----Style for Footer area--------*/
+footer{
+	background-color: var(--footer-color);
+	min-height: 3em;
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*-----Style for extension & FAQ page--------*/
+.example{
+	background-color: var(--custDet-color);
+	margin: 2em;
+	padding: 2em;
+}
+
+#searchResult{
+	background-color: var(--custDet-color);
+	margin: 2em;
+	padding: 2em;
+}
+
+input[type=button]{
+	width: 5em;
+}
+
+#soa{
+	border-style: solid;
+	padding: 2em;
+	margin: 2em;
+}
+
+/*-----Style for Repair booking page--------*/
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 25em;
+	padding: 2em;
+}
+
+.container > div{
+	text-align: left;
+}
+
+.item1{
+	grid-column-start: 1;
+	grid-column-end:  3;
+}
+
+#rep_details{
+	padding-left: 3em;
+	padding-top: 1em;
+}
+
+#loan_details{
+	padding-left: 3em;
+}
+
+#cost_details{
+	position: absolute;
+	right: 0px;
+	padding-right: 10em;
+	padding-bottom: 5em;
+}
+
+hr{
+	border-top: 3px solid black;
+}
+
+/*---------------------------------------------------*/
+/*Style for tablet*/
+@media screen and (min-width : 600px){
+	header nav ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr; /*creating 2 equal columns*/
+		grid-gap: 0.3em;
+	}
+	header nav ul li{
+		display: block;
+	}
+
+	.customer_details{
+		padding-right: 7em;
+		padding-left: 7em;
+	}
+
+	.repair_details{
+		padding-right: 7em;
+		padding-left: 7em;
+	}
+
+	.courtesy_phone{
+		padding-right: 7em;
+		padding-left: 7em;
+	}
+	.cost{
+		padding-right: 7em;
+		padding-left: 7em;
+	}
+
+	.buttons {
+		padding-right: 7em;
+		padding-left: 7em;
+	}
+}
+
+/*---------------------------------------------------*/
+/*Style for laptop*/
+@media screen and (min-width: 1024px){
+	header{
+		display: grid;
+		grid-template-areas: 'title_area title_area nav_area'; /*create grid of 1 row */
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.title_area{
+		grid-area: title_area;
+	}
+	
+	.nav_area{
+		grid-area: nav_area;
+	}
+	
+	.form_layout{
+		display: grid;
+		grid-template-areas: 
+			'customer_det repair_det courtesy_pho'/*first row*/
+			'customer_det repair_det cost'/*second row*/
+			'button button button'; /*third row*/
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.form_layout input[type=text], input[type=Number], input[type=Date], select{
+		width: 50%;
+		float: right;
+	}
+
+	.form_layout input[type=button], input[type=submit], input[type=reset]{
+		width: 6em;
+		height: 3em;
+		float: center;
+	}
+	
+	.customer_details{
+		grid-area: customer_det;
+		padding: 3em;
+	}
+	
+	.repair_details{
+		grid-area: repair_det;
+		padding: 3em;
+	}
+	
+	.courtesy_phone{
+		grid-area: courtesy_pho;
+		padding: 3em;
+	}
+	
+	.cost{
+		grid-area: cost;
+		padding: 3em;
+	}
+	
+	.buttons{
+		grid-area: button;
+		padding: 3em;
+	}
+}

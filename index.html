@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<title> Assignment </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<!--for date picker-->
+	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!--my style sheet-->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--my javascript file-->
+	<script src="js/java.js"></script>
+    <!--css for date picker-->
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+</head>
+<body>
+	<!-------Header area---->
+	<header>
+		<h1 class = "title_area"> Phone Fix Booking System </h1>
+		<!---Navigation Bar---->
+		<nav class="nav_area">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="extension.html">Extension</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-------Main area------->
+	<main>
+		<form name="repair_form" action="" onsubmit="return validateForm()" method="post">
+			<div class="form_layout">
+				<section class="customer_details">
+					<h1> Customer Details </h1>
+					<br>
+					<fieldset>
+						<legend> Customer Type:*</legend> <br>
+						Consumer: <input type="radio" name="type" value="consumer" checked> <br><br>
+						Business: <input type="radio" name="type" value="business"> <br><br>
+					</fieldset>
+					<br>
+					Title:*
+					<select name="title">
+						<option value="Mr">Mr</option>
+						<option value="Mrs">Mrs</option>
+						<option value="Miss">Miss</option>
+						<option value="Ms">Ms</option>
+						<option value="Dr">Dr</option>
+					</select>
+					<br> <br>
+					First Name:* <input type="text" name="Fname">
+					<br><br>
+					Last Name:* <input type="text" name="Lname">
+					<br><br>
+					Street:* <input type="text" name="street">
+					<br><br>
+					Suburb: <input type="text" name="sub">
+					<br><br>
+					City:* <input type="text" name="city">
+					<br><br>
+					Post Code: <input type="Number" name="pc">
+					<br><br>
+					Phone Number:* <input type="text" name="pn">
+					<br><br>
+					Email:* <input type="text" name="email">
+				</section>
+				
+				<section class="repair_details">
+					<h1> Repair Details </h1>
+					<br>
+					Purchase Date:* <input type="text" id="pdate">
+					<br><br>
+					Repair Date:* <input type="text" id="rdate">
+					<br><br>
+					<fieldset>
+						<legend> Under Warranty</legend> <br>
+						Warranty: <input type="radio" name="warranty" id="waran"> <br><br>
+					</fieldset>
+					<br>
+					IMEI Number:* <input type="Number" name="imei">
+					<br><br>
+					Make:*
+					<select name="make">
+						<option value="Apple">Apple</option>
+						<option value="LG">LG</option>
+						<option value="Motorola">Motorola</option>
+						<option value="Nokia">Nokia</option>
+						<option value="Samsung">Samsung</option>
+						<option value="Sony">Sony</option>
+						<option value="Other">Other</option>
+					</select>
+					<br><br>
+					Model Number: <input type="text" name="monum">
+					<br><br>
+					Fault Category:*
+					<select name="fc">
+						<option value="Battery">Battery</option>
+						<option value="Charging">Charging</option>
+						<option value="Screen">screen</option>
+						<option value="SD-Storage">SD-storage</option>
+						<option value="Software">Software</option>
+						<option value="Other">Other</option>
+					</select>
+					<br><br>
+					Description:* <input type="text" name="desc" style="height:7em">
+					<br><br><br><br><br><br><br>
+					Upload pictures of your broken phone:
+					<br><br>
+					<input type="file" id="myFile">
+				</section>
+				
+				<section class="courtesy_phone">
+					<h1> Courtesy Phone </h1>
+					<br>
+					Item Type:
+					<select id="itemtype">
+						<option value="iphone">iphone</option>
+						<option value="ophones">Other Phone</option>
+						<option value="charger">Charger</option>
+					</select>
+					<br><br>
+					<input type="button" name="add" value="Add Item" onClick="addItem()" style="height: 3em">
+					<br><br>
+					<table id = "co_table">
+						<thead>
+							<tr>
+								<th> Item </th>
+								<th> Cost </th>
+							</tr>
+						</thead>
+						<tbody>
+			
+						</tbody>
+					</table>
+				</section>
+				
+				<section class="cost">
+					<h1> Cost </h1>
+					<br>
+					Bond: <input type="text" id="bond" disabled="disabled">
+					<br><br>
+					Service Fee: <input type="text" id="service_fee" disabled="disabled">
+					<br><br>
+					Total: <input type="text" id="total" disabled="disabled">
+					<br><br>
+					GST: <input type="text" id="gst" disabled="disabled">
+					<br><br>
+					Total(+GST): <input type="text" id="total_gst" disabled="disabled">
+				</section>
+				
+				<section class="buttons">
+					<input type="reset" value="Reset" style="height: 3em">
+					<input type="submit" value="Submit" style="height: 3em">
+					<input type="button" onclick="loadJSON()" value="FAQs" style="height: 3em">
+					<br><br>
+					<p> <b>Location Information: </b> </p>
+					<p id="dem"> </p>
+				</section>
+			</div>
+		</form>
+	</main>
+	
+	<!-------Footer area----->
+	<p id="demo"></p>
+	<footer>
+		<p> Advanced Web Design Copyright &copy; 2019 </p>
+	</footer>
+
+</body>
+
+</html>

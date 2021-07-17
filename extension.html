@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<!--my style sheet-->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<!-------Header area---->
+	<header>
+		<h1 class = "title_area"> JavaScript Extension</h1>
+		<!---Navigation Bar---->
+		<nav class="nav_area">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="extension.html">Extension</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-------Main area------->
+	<main>
+		<div id = "soa">
+			<p> <b>Statement of authenticity</b></p>
+			<ul> I confirm that: </ul>
+				<li>This is an original assessment and is entirely my own work.</li>
+				<li>It contains no material previously published or written by another person or myself except where due acknowledgement is made in the text.</li>
+				<li>No material which to a substantial extent, has been submitted for any other academic course, is included without acknowledgement</li>
+		</div>
+
+		<div class="example">
+			<h3> DatePicker</h3><br>
+			<p> jQueryUI provides datepicker() method that creates  datepicker UI for an
+				input. If a date is chosen, feedback is shown as the input's value.
+				You can customize the date format and language, restrict the selectable
+				date ranges and add in buttons and other navigation options easily. I used the datepicker for the purchase date and repair date selection in the form and addded validation like maxDate to restrict future date selections.</p>
+		</div>
+
+		<div class="example">
+			<h3> "search" feature </h3><br>
+			<p> I added a search feature on the FAQ page using the filter() method. The search function searches all questions in a JSON array that match a specified key words entered by the user and the results have been displayed right below the search button with all other questions after it.</p>
+		</div>
+
+		<div class="example">
+			<h3> Ajax/JSON</h3><br>
+			<p> I used a JSON file to store the faq questions and answers and i use Ajax 
+				method to retrive the data from the JSON file and display it on a new window when the user clicks the FAQ button.</p>
+		</div>
+
+		<div class="example">
+			<h3> File upload feature </h3><br>
+			<p> I added a file upload option on the form in the repair details section using the input type=file. The files property returns a FileList object, representing the file or files selected with the file upload button.
+			Through the FileList object, you can get the name, size and the contents of the files.</p>
+		</div>
+
+		<div class="example">
+			<h3> HTML Geolocation API </h3><br>
+			<p>The HTML Geolocation API is used to locate a user’s position. Since this can compromise privacy, the position is not
+			available unless the user approves it. It allows to record the latitude and longitude coordinates of the current location of the user's. I added the location information in the buttons area in which when the page is loaded the longitude and latitude information will be displayed.</p>
+		</div>
+
+	</main>
+
+	<!-------footer area------->
+	<footer>
+		<p> Advanced Web Design Copyright &copy; 2019 </p>
+	</footer>
+
+</body>
+</html>
